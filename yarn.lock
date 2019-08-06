@@ -2015,7 +2015,7 @@ expo-web-browser@~6.0.0:
   resolved "https://registry.yarnpkg.com/expo-web-browser/-/expo-web-browser-6.0.0.tgz#63a59d4c02cd7ba47faa6a2eb04decb1a1ab2a32"
   integrity sha512-7XkFPd4PRlVP6FscTnn78c0tY6+yLzb2Eai/ed+l+LB+hZWuhyY3ONzYM7/IKAiPmfhZr4Qs80vIa7iiavti8A==
 
-expo@^34.0.1:
+expo@^34.0.3:
   version "34.0.3"
   resolved "https://registry.yarnpkg.com/expo/-/expo-34.0.3.tgz#5e2ac4ff2ddbcb2a095106d82e920e6a02a3dbaa"
   integrity sha512-1WCg6ZpYuNQ1YdZ1vDjksB45mts2DnymHjRo7s1de5RB+Ym8SlhNelbQXOZTkdSicNg0dk9lENqcWPRAWwR2bA==
