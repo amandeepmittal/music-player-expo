@@ -115,10 +115,9 @@ export default class App extends React.Component {
 		let { playbackInstance, currentIndex } = this.state
 		if (playbackInstance) {
 			await playbackInstance.unloadAsync()
-			currentIndex < audioBookPlaylist.length - 1 ? (currentIndex -= 1) : (currentIndex = 0)
 			this.setState({
-				currentIndex
-			})
+				currentIndex : (currentIndex === 0 ? audioBookPlaylist.length -1 : currentIndex-1)
+			});
 			this.loadAudio()
 		}
 	}
@@ -127,10 +126,9 @@ export default class App extends React.Component {
 		let { playbackInstance, currentIndex } = this.state
 		if (playbackInstance) {
 			await playbackInstance.unloadAsync()
-			currentIndex < audioBookPlaylist.length - 1 ? (currentIndex += 1) : (currentIndex = 0)
 			this.setState({
-				currentIndex
-			})
+				currentIndex: (currentIndex+1 > audioBookPlaylist.length - 1 ? 0 : currentIndex+1)
+			});
 			this.loadAudio()
 		}
 	}
