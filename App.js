@@ -153,10 +153,7 @@ export default class App extends React.Component {
 	render() {
 		return (
 			<View style={styles.container}>
-				<Image
-					style={styles.albumCover}
-					source={{ uri: 'http://www.archive.org/download/LibrivoxCdCoverArt8/hamlet_1104.jpg' }}
-				/>
+				<Image style={styles.albumCover} source={{ uri: audioBookPlaylist[this.state.currentIndex].imageSource }}/>
 				<View style={styles.controls}>
 					<TouchableOpacity style={styles.control} onPress={this.handlePreviousTrack}>
 						<Ionicons name='ios-skip-backward' size={48} color='#444' />
